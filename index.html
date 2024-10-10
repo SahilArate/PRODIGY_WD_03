@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tic-Tac-Toe with Score</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="player-input">
+            <input type="text" id="playerX" placeholder="Player X's name" required>
+            <input type="text" id="playerO" placeholder="Player O's name" required>
+        </div>
+        <div class="score-board">
+            <div class="score">
+                <span id="xScore">X: 0</span>
+            </div>
+            <div class="score">
+                <span id="oScore">O: 0</span>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <h2 id="winningMessage" class="hide">
+            <span id="winningText"></span>
+            <button id="restartButton">Restart</button>
+        </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
